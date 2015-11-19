@@ -84,14 +84,16 @@ public class Sorting extends Application {
 				input10 = num10.getText();
 				SortedList[9]= Integer.parseInt(input10);
 				
+			
 				for(int i=0;i<SortedList.length;i++){
-					for(int j=1;j<SortedList.length;j++){
-						if(SortedList[i]<SortedList[j]){
+					for(int j=(i+1);j<SortedList.length;j++){
+						if(SortedList[i]>SortedList[j]){
 							int store = SortedList[i];
 							SortedList[i] = SortedList[j];
-							SortedList[j]=store;
+							SortedList[j]=store;	
 							
-						}
+						}						
+						
 					}
 				}
 				
